@@ -1,0 +1,233 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: roboto, verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+}
+
+p, ol, ul, td {
+  font-family: futura, verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  list-style-type: none;
+}
+
+/* Header */
+
+header {
+  background-color: #333;
+  height: 5em;
+  color: white;
+
+    img{
+      height: 2em;
+      padding: 1em;
+    }
+
+    a{
+
+      color: white;
+      font-family: arial;
+      font-style: normal;
+      text-decoration: none;
+      display: inline;
+      float: left;
+      margin: 1em 1em 1em 1em;
+    }
+
+    a:hover{
+      text-decoration: underline;
+      color: grey;
+    }
+
+}
+
+.nav-right{
+  float: right;
+  display: inline-block;
+}
+
+/* Footer */
+
+footer{
+  position: fixed;
+  bottom: 0;
+  background-color: #303030;
+  width: 100%;
+  height: auto;
+
+ li {
+  display: inline;
+  float: right;
+  text-decoration: none;
+  padding-right: 3em;
+
+  }
+    img{
+      height: 2em;
+      margin: 1em 1em 1em 1em;
+    }
+}
+
+
+
+.title {
+    margin-top: 5%;
+    animation-duration: 3s;
+    animation-name: slidein;
+    font-size: 80px;
+    text-align: center;
+
+}
+
+@keyframes slidein {
+      from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+/* Gestion Texte et Image */
+
+
+.chat
+{
+  float: left;
+  width: 35% ;
+  border: solid red;
+  margin: 10px;
+
+  img{
+    width: 100%;
+  }
+
+}
+
+.txtdroit
+{
+  float: right;
+  width: 55%;
+  height: 30%;
+  border: solid blue;
+  margin: 10px;
+}
+
+
+/* Pour le plaisir des yeux */
+
+
+// #notice {
+//   color: green;
+// }
+//
+// .field_with_errors {
+//   padding: 2px;
+//   background-color: red;
+//   display: table;
+// }
+//
+// #error_explanation {
+//   width: 450px;
+//   border: 2px solid red;
+//   padding: 7px 7px 0;
+//   margin-bottom: 20px;
+//   background-color: #f0f0f0;
+//
+//   h2 {
+//     text-align: left;
+//     font-weight: bold;
+//     padding: 5px 5px 5px 15px;
+//     font-size: 12px;
+//     margin: -7px -7px 0;
+//     background-color: #c00;
+//     color: #fff;
+//   }
+//
+//   ul li {
+//     font-size: 12px;
+//     list-style: square;
+//   }
+// }
+
+
+/* H2 Texte multi-couleurs */
+
+.awesome {
+
+  font-family: futura;
+  font-style: italic;
+
+  width:100%;
+
+  margin: 0 auto;
+  text-align: center;
+
+  color:#313131;
+  font-size:45px;
+  font-weight: bold;
+
+  -webkit-animation:colorchange 20s infinite alternate;
+
+
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+
+    color: blue;
+  }
+
+  10% {
+
+    color: #8e44ad;
+  }
+
+  20% {
+
+    color: #1abc9c;
+  }
+
+  30% {
+
+    color: #d35400;
+  }
+
+  40% {
+
+    color: blue;
+  }
+
+  50% {
+
+    color: #34495e;
+  }
+
+  60% {
+
+    color: blue;
+  }
+
+  70% {
+
+    color: #2980b9;
+  }
+  80% {
+
+    color: #f1c40f;
+  }
+
+  90% {
+
+    color: #2980b9;
+  }
+
+  100% {
+
+    color: pink;
+  }
+}
