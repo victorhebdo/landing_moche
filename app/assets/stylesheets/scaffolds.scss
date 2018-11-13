@@ -1,8 +1,17 @@
+.home-page{
+  background-size: 100%;
+  background-image: image-url('map.jpg');
+}
+
+.home-page{
+  text-align: center;
+}
+
+
 body {
-  background-color: #fff;
-  color: #333;
   font-family: roboto, verdana, arial, helvetica, sans-serif;
   font-size: 13px;
+  margin: 0;
 }
 
 p, ol, ul, td {
@@ -10,6 +19,54 @@ p, ol, ul, td {
   font-size: 13px;
   list-style-type: none;
 }
+
+/* tabs */
+.tabs {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10%;
+  padding: 0 20px;
+  align-content: center;
+  clear: both;
+  color: white;
+  background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%);
+  background-size: cover;
+}
+.tabs input {
+  display: none;
+}
+.tabs label {
+  display: inline-block;
+  padding: 6px 0 6px 0;
+  margin: 0 -2px;
+  width: 25%; /* =100/tabs number */
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+.tabs label:hover {
+  cursor: pointer;
+}
+.tabs input:checked + label {
+  border: 1px solid #000;
+  border-width: 1px 1px 0 1px;
+}
+.tabs #tab1:checked ~ .content #content1,
+.tabs #tab2:checked ~ .content #content2,
+.tabs #tab3:checked ~ .content #content3,
+.tabs #tab4:checked ~ .content #content4 {
+  display: block;
+}
+.tabs .content > div {
+  display: none;
+  padding-top: 20px;
+  text-align: left;
+  /*height: 192px;*/
+  overflow: auto;
+}
+
+
+
+
 
 /* Header */
 
@@ -53,25 +110,26 @@ footer{
   bottom: 0;
   background-color: #303030;
   width: 100%;
-  height: auto;
+  height: 3.5em;
 
  li {
-  display: inline;
   float: right;
   text-decoration: none;
-  padding-right: 3em;
-
+  margin-right: 3em;
   }
-    img{
-      height: 2em;
-      margin: 1em 1em 1em 1em;
-    }
+
+  img{
+    height: 1.5em;
+  }
+
+
+  .grow:hover { transform: scale(1.02); }
 }
 
 
 
 .title {
-    margin-top: 5%;
+    margin-top: 3%;
     animation-duration: 3s;
     animation-name: slidein;
     font-size: 80px;
@@ -108,51 +166,69 @@ footer{
 
 }
 
-.txtdroit
+
+.content-contact{
+  width: 40% ;
+  margin: 1em;
+  border: solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%);
+
+  a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  a:hover {background-color: #f86073}
+
+}
+
+.parrot
 {
-  float: right;
-  width: 55%;
-  height: 30%;
+  border: solid red;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  background-image: image-url('parrot.jpg');
+  background-size: cover;
+  display: block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+
+
+
+}
+
+.legend
+{
   border: solid blue;
   margin: 10px;
+  text-align: center;
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 100px;
+}
+
 }
 
 
-/* Pour le plaisir des yeux */
 
+/* Bouton */
 
-// #notice {
-//   color: green;
-// }
-//
-// .field_with_errors {
-//   padding: 2px;
-//   background-color: red;
-//   display: table;
-// }
-//
-// #error_explanation {
-//   width: 450px;
-//   border: 2px solid red;
-//   padding: 7px 7px 0;
-//   margin-bottom: 20px;
-//   background-color: #f0f0f0;
-//
-//   h2 {
-//     text-align: left;
-//     font-weight: bold;
-//     padding: 5px 5px 5px 15px;
-//     font-size: 12px;
-//     margin: -7px -7px 0;
-//     background-color: #c00;
-//     color: #fff;
-//   }
-//
-//   ul li {
-//     font-size: 12px;
-//     list-style: square;
-//   }
-// }
 
 
 /* H2 Texte multi-couleurs */
@@ -230,4 +306,44 @@ footer{
 
     color: pink;
   }
+}
+
+
+/*/ Dropdown */
+.dropbtn {
+    background-color: #f74156;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #f74156;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f86073}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .avatar_img {
+  transform: scale(1.15);
+  border-radius: 45% !important;
+}
+.dropdown:hover .myname {
+  color: #f86073
 }
