@@ -1,8 +1,8 @@
-# THP Semaine 6 Jour 4
+# THP Semaine 7 Jour 2
 
 ## Lien vers le project en production :
 
-https://cryptonatorr.herokuapp.com/
+https://landing-moche.herokuapp.com
 
 
 ## Etapes d'utilisation :
@@ -21,6 +21,15 @@ Enfin :
 ```
    $> rails db:migrate
 ```
+
+Dernière étape pour ceux qui veulent le voir en local mais sinon le lien heroku marche !!! :boom:
+
+Et pour finir :
+```
+   $> rails server
+```
+
+
 ## Et voici notre belle équipe :frog: :
 
 Noms | Pseudo Slack
@@ -33,3 +42,5 @@ Hélène Martin | @Helene Cbm :panda_face:
 Victor Gabella | @Victorhebdo :bear:
 
 Merci !!
+
+:poop::poop::poop::poop::poop::poop:
