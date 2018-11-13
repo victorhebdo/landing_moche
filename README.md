@@ -1,24 +1,35 @@
-# README
+# THP Semaine 6 Jour 4
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Lien vers le project en production :
 
-Things you may want to cover:
+https://cryptonatorr.herokuapp.com/
 
-* Ruby version
 
-* System dependencies
+## Etapes d'utilisation :
 
-* Configuration
+Pour pouvoir profiter des gems, n'oublie pas un petit :
+```
+   $> bundle install
+```
 
-* Database creation
+Ensuite :
+```
+   $> rails db:create
+```
 
-* Database initialization
+Enfin :
+```
+   $> rails db:migrate
+```
+## Et voici notre belle équipe :frog: :
 
-* How to run the test suite
+Noms | Pseudo Slack
+------------ | -------------
+Pauline Labaisse | @Pauline Labaisse :baby_chick:
+Margaux Cortier | @Margaux Crt :penguin:
+Irina Penkovskaia | @Ira P. :octocat:
+Max de Ponfilly | @Max :tiger:
+Hélène Martin | @Helene Cbm :panda_face:
+Victor Gabella | @Victorhebdo :bear:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Merci !!
